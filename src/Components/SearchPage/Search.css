@@ -1,0 +1,26 @@
+body{
+    background-image: url('../background.jpg');
+   background-position: center;
+}
+.search_submit{
+    margin-top: 100px;
+    display: flex;
+}
+.search_box{
+    width: 80vw;
+    height: 7vh;
+    margin-left: 40px;
+    margin-right: 10px;
+}
+.submit_btn{
+    width: 10vw;
+    height: 7vh;
+    background-color: rgb(191, 11, 116);
+    color: white;
+    cursor: pointer;
+}
+.result_txt{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}

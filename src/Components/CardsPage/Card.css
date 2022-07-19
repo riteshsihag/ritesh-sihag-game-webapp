@@ -1,0 +1,198 @@
+.game_main_container {
+    padding: 0%;
+    margin-bottom: -120px;
+    margin-top: 100px;
+
+}
+
+.game_main_container h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.game_container {
+    display: flex;
+    margin-top: 0px;
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 96.5vw;
+    height: 50vh;
+    margin-left: 10px;
+}
+
+.game_container::-webkit-scrollbar {
+    display: none;
+}
+
+.game_child {
+    position: relative;
+}
+
+
+.list_game {
+    position: relative;
+    width: 400px;
+    height: 230px;
+    overflow: hidden;
+    top: 8px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.list_game::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255, 227, 227, 0.2);
+    backdrop-filter: blur(5px);
+}
+
+.list_game img {
+    width: 220px;
+    height: 230px;
+    margin-left: 2px;
+    position: absolute;
+    padding: 10px;
+}
+
+
+.game_name{
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 5px;
+    color: white;
+    font-size: 17px;
+    left: 220px;
+}
+
+.game_genres {
+    position: relative;
+    top: 40px;
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    left: 220px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #e7a785;
+    background-color: #e7a785;
+    border-radius: 12px;
+}
+
+.game_release{
+    position: absolute;
+    top: 70px;
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    left: 220px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #fbd1a2;
+    background-color: #fbd1a2;
+    border-radius: 12px;
+}
+.game_rating{
+    position: absolute;
+    top: 100px;
+    width: fit-content;
+    color: white;
+    font-size: 10px;
+    left: 220px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 2px solid #7dcfb6;
+    background-color: #7dcfb6;
+    border-radius: 12px;
+}
+.Info_btn{
+    position: absolute;
+    bottom: 65px;
+    right: 108px;
+    color: white;
+    background-color: #6d8474;
+    border: 2px solid #6d8474;
+    padding: 3px;
+    border-radius: 12px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.Info_btn:hover{
+    color: #435248;
+    background-color: rgb(255, 255, 255);
+}
+
+.game_btn {
+    position: absolute;
+    bottom: 20px;
+    right: 67px;
+    color: white;
+    background-color: #28666e;
+    border: 2px solid #28666e;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: fit-content;
+}
+.game_btn:hover{
+    color: #153438;
+    background-color: rgb(255, 255, 255);
+
+}
+@media(min-width:240px){
+    .game_genres{
+        top: 37px;
+    }
+}
+
+@media (min-width: 320px) and (max-width:628px) and (max-height:500px){
+    .game_main_container{
+
+        height: 55vh;
+        margin-bottom: 30px;
+    }
+    .game_main_container h1{
+        font-size: 20px;
+    }
+    .game_container{
+        margin-left: -2px;
+    }
+    .list_game{
+        width: 45vh;
+
+    }
+    .game_name{
+        left: 20px;
+    }
+.game_genres{
+    left: 20px;
+}
+.game_rating{
+    left: 20px;
+}
+.game_release{
+    left: 20px;
+}
+.Info_btn{
+    left: 20px;
+}
+.game_btn{
+    left: 20px;
+}
+}
+
+@media (max-width:420px)and (max-height:1000px) {
+    .game_main_container{
+        margin-bottom: -200px;
+        margin-left: -10px;
+    }
+}
